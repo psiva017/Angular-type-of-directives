@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+	<script type="text/javascript" src="./scripts/app.js"></script>
+</head>
+<body ng-app="myApp">
+<div ng-controller="MainCtrl" class="container">
+
+	<attr-check name={{dateNow}}></attr-check>
+	<item-select value={{univ}} ></item-select>
+	<directive-with-at-scope message={{text}}></directive-with-at-scope>
+
+	<directive-with-eq-scope usernames="users"></directive-with-eq-scope>
+	<input type="text" name="" ng-model="users">
+
+</div>
+</body>
+</html>
